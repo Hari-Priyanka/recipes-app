@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+:root{ 
+    --fontLogo: "Ojuju", sans-serif;
+    --fontHead: "Cormorant Garamond", serif;
+    --fontBody: "Roboto", sans-serif;
+    --boxShadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --transition: all 0.5s ease-in;
+    --border: 1px solid #ccc;
+    --white: #f9f9f9;
+    --black: #070517;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+    font-size: 62.5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+    font-family: var(--fontBody);
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width:780px){
+    html{
+        font-size: 59%;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width:480px){
+    html{
+        font-size: 50%;
+    }
 }

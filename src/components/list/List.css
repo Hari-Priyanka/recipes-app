@@ -1,0 +1,43 @@
+.list_item{
+    padding: 1rem;
+    overflow-y: auto;
+    max-height: 300px;
+    line-height: 2;
+}
+
+.list_item::-webkit-scrollbar {
+    width: 5px;
+}
+
+.list_item::-webkit-scrollbar-track {
+    box-shadow: var(--boxShadow);
+}
+
+.list_item::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+}
+
+.areas,
+.categories,
+.ingredients{
+    font-size: 1.5rem;
+    color: var(--black);
+    display: block;
+    font-family: var(--fontHead);
+    margin-left: 1rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.areas:last-child,
+.categories:last-child,
+.ingredients:last-child{
+    margin-bottom: 5rem;
+}
+
+.areas.active_link,
+.categories.active_link,
+.ingredients.active_link{
+    color: greenyello;
+    font-weight: bold;
+}
